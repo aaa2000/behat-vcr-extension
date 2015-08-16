@@ -1,0 +1,25 @@
+{
+    "name": "aaa2000/vcr-extension",
+    "description": "Record your HTTP interactions in behat scenarios and replay them during future test runs",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4",
+        "behat/behat": "~3.0",
+        "php-vcr/php-vcr": "~1.2.4"
+    },
+    "autoload": {
+        "psr-4" : {
+            "BVCR\\Behat\\" : "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4" : {
+            "BVCR\\Behat\\Tests\\" : "tests"
+        }
+    },
+    "require-dev": {
+        "symfony/process": "~2.6",
+        "phpunit/phpunit": "~4.4",
+        "ciaranmcnulty/behat-localwebserverextension": "~1.0"
+    }
+}

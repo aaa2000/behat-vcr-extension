@@ -1,0 +1,9 @@
+default:
+    suites:
+        default:
+            contexts:
+                - FeatureContext:
+                    # Override server port defined in scenarios
+                    port: 8000
+            filters:
+                tags: "~@todo"
