@@ -3,6 +3,7 @@ Behat VCR Extension
 
 [![Build Status](https://travis-ci.org/aaa2000/behat-vcr-extension.svg?branch=master)](https://travis-ci.org/aaa2000/behat-vcr-extension)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/aaa2000/behat-vcr-extension/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/aaa2000/behat-vcr-extension/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/aaa2000/behat-vcr-extension/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/aaa2000/behat-vcr-extension/?branch=master)
 
 VcrExtension is an integration layer between Behat 3.0+ and php-vcr 1.2.4+.
 

@@ -10,5 +10,10 @@ before_script:
   - export PATH=vendor/bin:$PATH
 
 script:
-  - phpunit
+  - phpunit -v --coverage-clover=coverage.clover
   - behat -fprogress --strict
+
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+
