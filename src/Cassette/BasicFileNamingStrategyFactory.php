@@ -11,10 +11,8 @@ class BasicFileNamingStrategyFactory implements FileNamingStrategyFactory
         switch($strategyName) {
             case 'by_tags':
                 return new ByTagsFileNamingStrategy();
-                break;
             case 'by_scenario_name':
                 return new ByScenarioNameFileNamingStrategy();
-                break;
             default:
                 throw new UnexpectedValueException(sprintf('No strategy for `s', $strategyName));
         }

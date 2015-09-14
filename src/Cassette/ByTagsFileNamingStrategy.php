@@ -10,6 +10,7 @@ use Behat\Transliterator\Transliterator;
 class ByTagsFileNamingStrategy implements FileNamingStrategy
 {
     const DEFAULT_SEPARATOR = '_';
+    private $directory;
     private $separator;
 
     public function __construct($directory = 'behat_tags', $separator = self::DEFAULT_SEPARATOR)

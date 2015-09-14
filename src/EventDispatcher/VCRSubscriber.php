@@ -107,7 +107,7 @@ class VCRSubscriber implements EventSubscriberInterface
         $this->videorecorder->insertCassette($filename);
     }
 
-    public function turnOffVCR(ScenarioTested $event)
+    public function turnOffVCR()
     {
         $this->videorecorder->turnOff();
     }
