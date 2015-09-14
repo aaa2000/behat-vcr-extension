@@ -93,7 +93,7 @@ class Configuration
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getMode()
     {
@@ -125,7 +125,7 @@ class Configuration
     }
 
     /**
-     * @param mixed $fileNamingStrategy
+     * @param FileNamingStrategy $fileNamingStrategy
      */
     public function setFileNamingStrategy(FileNamingStrategy $fileNamingStrategy)
     {
