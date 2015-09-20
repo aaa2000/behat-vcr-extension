@@ -148,7 +148,13 @@ class VCRExtension implements Extension
     private function loadVcrFactory(ContainerBuilder $container)
     {
         $definition = new Definition('VCR\VCRFactory', array(new Reference(self::VCR_CONFIG_ID)));
-        $definition->setFactory(array('VCR\VCRFactory', 'getInstance'));
+        if (method_exists($definition, 'setFactory')) {
+            $definition->setFactory(array('VCR\VCRFactory', 'getInstance'));
+        } else {
+            // to be removed when dependency on Symfony DependencyInjection is bumped to 2.6
+            $definition->setFactoryClass('VCR\VCRFactory');
+            $definition->setFactoryMethod('getInstance');
+        }
         $container->setDefinition(self::VCR_FACTORY_ID, $definition);
     }
 

@@ -20,6 +20,6 @@
     "require-dev": {
         "symfony/process": "~2.6",
         "phpunit/phpunit": "~4.4",
-        "ciaranmcnulty/behat-localwebserverextension": "~1.0"
+        "ciaranmcnulty/behat-localwebserverextension": "^1.0.1"
     }
 }
