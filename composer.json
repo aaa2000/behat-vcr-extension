@@ -1,6 +1,8 @@
 {
-    "name": "aaa2000/vcr-extension",
+    "name": "aaa2000/behat-vcr-extension",
+    "type": "behat-extension",
     "description": "Record your HTTP interactions in behat scenarios and replay them during future test runs",
+    "keywords": ["test", "http", "vcr"],
     "license": "MIT",
     "require": {
         "php": ">=5.4",
