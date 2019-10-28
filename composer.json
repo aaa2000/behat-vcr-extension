@@ -7,7 +7,7 @@
     "require": {
         "php": ">=5.4",
         "behat/behat": "~3.0",
-        "php-vcr/php-vcr": "~1.2.4"
+        "php-vcr/php-vcr": "~1.4"
     },
     "autoload": {
         "psr-4" : {
